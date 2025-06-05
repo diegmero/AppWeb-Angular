@@ -61,6 +61,19 @@
     color: var(--gray-700);
   }
 
+  .btn-ini{
+    color: var(--pill-accent);
+    background: color-mix(in srgb, var(--pill-accent) 15%, transparent);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1rem;
+    font-style: normal;
+    font-family: var(--inter-font);
+    margin-top: 1rem;
+    text-decoration: none;
+  }
+
   main {
     width: 100%;
     min-height: 100%;
@@ -69,7 +82,7 @@
     align-items: center;
     padding: 1rem;
     box-sizing: inherit;
-    position: relative;
+    position: absolute;
   }
 
   .angular-logo {
@@ -93,7 +106,7 @@
   }
 
   .divider {
-    width: 1px;
+    width: 2px;
     background: var(--red-to-pink-to-purple-vertical-gradient);
     margin-inline: 0.5rem;
   }
@@ -225,14 +238,16 @@
           <clipPath id="a"><path fill="#fff" d="M0 0h982v239H0z" /></clipPath>
         </defs>
       </svg>
-      <h1>Hello, {{ title }}</h1>
-      <p>Congratulations! Your app is running. 🎉</p>
+      <h1>Hola, {{ title }}</h1>
+      <h4>Bienvenido a <a href="https://mutualser.com" target="_blank"> {{empresa}}</a></h4>
+      <p>Felicidades! La aplicación está corriendo. 🎉</p>
+      <button class="btn-ini">{{proveedor}}</button>
     </div>
     <div class="divider" role="separator" aria-label="Divider"></div>
     <div class="right-side">
       <div class="pill-group">
         @for (item of [
-          { title: 'Explore the Docs', link: 'https://angular.dev' },
+          { title: 'Explora the Docs', link: 'https://angular.dev' },
           { title: 'Learn with Tutorials', link: 'https://angular.dev/tutorials' },
           { title: 'CLI Docs', link: 'https://angular.dev/tools/cli' },
           { title: 'Angular Language Service', link: 'https://angular.dev/tools/language-service' },

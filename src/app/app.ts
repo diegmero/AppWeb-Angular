@@ -8,5 +8,7 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.css'
 })
 export class App {
-  protected title = 'bases';
+  protected title = 'Diego Romero';
+  protected empresa = 'MI Aplicación';
+  protected proveedor = 'GrinTic';
 }
